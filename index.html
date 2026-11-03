@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Putri Sinta Anggraeni - Portofolio</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Family: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-white text-gray-800 antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- NAVIGATION BAR -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#beranda" onclick="showMainPage()" class="font-extrabold text-lg md:text-xl tracking-tight text-gray-900 cursor-pointer">
+        PUTRI SINTA ANGGRAENI
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600" id="desktop-nav">
+        <a href="#beranda" onclick="showMainPage()" data-section="beranda" class="nav-link transition pb-1">Beranda</a>
+        <a href="#tentang" onclick="showMainPage()" data-section="tentang" class="nav-link transition pb-1">Tentang</a>
+        <a href="#pengalaman" onclick="showMainPage()" data-section="pengalaman" class="nav-link transition pb-1">Pengalaman</a>
+        <a href="#portofolio" onclick="showMainPage()" data-section="portofolio" class="nav-link transition pb-1">Portofolio</a>
+        <a href="#kontak" onclick="showMainPage()" data-section="kontak" class="nav-link transition pb-1">Kontak</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <a href="#kontak" onclick="showMainPage()" class="hidden md:inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-medium text-sm px-5 py-2.5 rounded-xl transition shadow-sm hover:shadow">
+        Mari Terhubung <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-gray-700 text-2xl focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Nav List -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 px-6 py-4 space-y-3 font-medium text-gray-600">
+      <a href="#beranda" onclick="showMainPage()" data-section="beranda" class="mobile-nav-link block transition py-1">Beranda</a>
+      <a href="#tentang" onclick="showMainPage()" data-section="tentang" class="mobile-nav-link block transition py-1">Tentang</a>
+      <a href="#pengalaman" onclick="showMainPage()" data-section="pengalaman" class="mobile-nav-link block transition py-1">Pengalaman</a>
+      <a href="#portofolio" onclick="showMainPage()" data-section="portofolio" class="mobile-nav-link block transition py-1">Portofolio</a>
+      <a href="#kontak" onclick="showMainPage()" data-section="kontak" class="mobile-nav-link block transition py-1">Kontak</a>
+      <a href="#kontak" onclick="showMainPage()" class="inline-block mt-2 bg-brand-600 text-white text-sm font-medium px-4 py-2 rounded-lg">Mari Terhubung ↗</a>
+    </div>
+  </header>
+
+  <!-- WRAPPER HALAMAN UTAMA -->
+  <div id="main-content">
+    <!-- HERO SECTION -->
+    <section id="beranda" class="py-16 md:py-24 bg-gradient-to-b from-blue-50/40 via-white to-white scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+        
+        <!-- Text Left -->
+        <div class="md:col-span-7 space-y-6">
+          <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight">
+            Putri Sinta<br>
+            <span class="text-brand-600">Anggraeni.</span>
+          </h1>
+          
+          <p class="text-lg text-gray-600 font-medium flex items-center gap-2 flex-wrap">
+            <span>Information Technology</span>
+            <span class="text-brand-600">✦</span>
+            <span>Digital Creative</span>
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <!-- Tombol Download CV -->
+            <a href="https://drive.google.com/uc?export=download&id=1dvtwG0uQwd0qyDVXC4ydV1_s1CF8YOgH" target="_blank" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white px-6 py-3 rounded-xl font-medium text-sm transition shadow-md shadow-brand-500/20">
+              <i class="fa-solid fa-download"></i> Download CV
+            </a>
+            <a href="#portofolio" class="inline-flex items-center gap-2 bg-white hover:bg-gray-50 border border-gray-200 text-gray-700 px-6 py-3 rounded-xl font-medium text-sm transition">
+              Lihat Portofolio <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+          </div>
+
+          <div class="flex items-center gap-2 text-sm text-gray-500 pt-4">
+            <i class="fa-solid fa-location-dot text-gray-400"></i>
+            <span>Semarang, Jawa Tengah, Indonesia</span>
+          </div>
+        </div>
+
+        <!-- Profile Image Right -->
+        <div class="md:col-span-5 flex justify-center">
+          <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-8 border-white shadow-2xl bg-gray-100">
+            <img 
+              src="foto.jpeg" 
+              alt="Putri Sinta Anggraeni" 
+              class="w-full h-full object-cover object-top"
+            >
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TENTANG SAYA SECTION -->
+    <section id="tentang" class="py-16 md:py-20 border-t border-gray-100 scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="max-w-3xl mb-12">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-snug">
+            Rasa ingin tahu.<br>
+            <span class="text-brand-600">Semangat untuk bertumbuh.</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Bio & Education -->
+          <div class="lg:col-span-6 space-y-6 text-gray-600 leading-relaxed text-sm md:text-base">
+            <p>
+              Saya <strong class="text-gray-900">Putri Sinta Anggraeni</strong>, sarjana komputer dari Universitas Semarang. Saya memiliki ketertarikan pada dunia teknologi, pengembangan web, dan kreativitas digital.
+            </p>
+            <p>
+              Pengalaman di bidang IT support, media sosial, dan dokumentasi mengajarkan saya untuk melihat tantangan dari berbagai sudut pandang serta menggabungkan ketelitian teknis dengan cara berpikir kreatif.
+            </p>
+
+            <!-- Education Cards -->
+            <div class="pt-6 space-y-6 border-t border-gray-100">
+              <div class="flex items-start gap-4">
+                <div class="p-3 bg-blue-50 text-brand-600 rounded-xl mt-1">
+                  <i class="fa-solid fa-graduation-cap text-lg"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-gray-900">Universitas Semarang</h3>
+                  <p class="text-xs text-gray-500">Sistem Informasi - Fakultas Teknologi Informasi dan Komunikasi</p>
+                  <p class="text-xs font-bold text-brand-600 mt-1">IPK 3,95 / 4,00</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="p-3 bg-blue-50 text-brand-600 rounded-xl mt-1">
+                  <i class="fa-solid fa-school text-lg"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-gray-900">SMA Negeri 1 Godong</h3>
+                  <p class="text-xs text-gray-500">Matematika dan Ilmu Pengetahuan Alam (MIPA)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills Section -->
+          <div class="lg:col-span-6 space-y-6">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400">KEAHLIAN SAYA</h3>
+
+            <!-- Skill Category 1 -->
+            <div class="space-y-3">
+              <p class="text-xs font-semibold text-gray-700 flex items-center gap-2">
+                <i class="fa-solid fa-code text-brand-600"></i> Web & Software Development
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">PHP</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">JavaScript</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">HTML5 & CSS</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">Laravel</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">Tailwind CSS</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">Bootstrap</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">MySQL</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">SQLite</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">RESTful API</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">Git & GitHub</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">Composer</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">Postman</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">VS Code</span>
+              </div>
+            </div>
+
+            <!-- Skill Category 2 -->
+            <div class="space-y-3 pt-2">
+              <p class="text-xs font-semibold text-gray-700 flex items-center gap-2">
+                <i class="fa-solid fa-desktop text-brand-600"></i> IT & Technical Support
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">Hardware & Software Installation</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">Troubleshooting</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">SDLC</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">System Maintenance</span>
+              </div>
+            </div>
+
+            <!-- Skill Category 3 -->
+            <div class="space-y-3 pt-2">
+              <p class="text-xs font-semibold text-gray-700 flex items-center gap-2">
+                <i class="fa-solid fa-camera text-brand-600"></i> Creative & Interpersonal
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">Content Planning</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">Video Editing</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">Camera Operation</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">Digital Marketing</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">Community Management</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">Public Speaking</span>
+                <span class="px-3 py-1.5 bg-gray-50 border border-gray-200 text-gray-600 text-xs rounded-lg font-medium">Event Coordination</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PENGALAMAN SECTION -->
+    <section id="pengalaman" class="py-16 md:py-20 bg-slate-50/50 scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+          <div>
+            <span class="text-xs font-bold text-brand-600 uppercase tracking-wider">PERJALANAN PROFESIONAL</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-1">
+              Belajar dari setiap <span class="text-brand-600">pengalaman.</span>
+            </h2>
+          </div>
+          <p class="text-xs text-gray-500 max-w-xs mt-3 md:mt-0">
+            
+          </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Card 1 -->
+          <div class="bg-white border border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+            <div class="flex justify-between items-center mb-3">
+              <span class="px-2.5 py-1 bg-blue-50 text-brand-600 text-xs font-semibold rounded-md">Internship</span>
+              <span class="text-xs text-gray-400">Okt 2023 - Jun 2025</span>
+            </div>
+            <h3 class="font-bold text-gray-900 text-lg">IT Support Specialist & Teknisi Laboran</h3>
+            <p class="text-xs text-brand-600 font-medium mb-3">FTIK - Universitas Semarang</p>
+            <p class="text-xs text-gray-500 leading-relaxed">
+              Menginstalasi, mengonfigurasi, dan menangani troubleshooting perangkat lunak dan keras pendukung laboratorium. Melakukan perawatan rutin jaringan LAN serta membuat konten visual.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white border border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+            <div class="flex justify-between items-center mb-3">
+              <span class="px-2.5 py-1 bg-blue-50 text-brand-600 text-xs font-semibold rounded-md">Full-time</span>
+              <span class="text-xs text-gray-400">Jul 2025 - Des 2025</span>
+            </div>
+            <h3 class="font-bold text-gray-900 text-lg">Social Media Specialist & Project Manager</h3>
+            <p class="text-xs text-brand-600 font-medium mb-3">CV. Kinarya Project Semarang</p>
+            <p class="text-xs text-gray-500 leading-relaxed">
+              Merancang kalender konten, memproduksi video, dan mengelola media sosial Yamaha Jateng. Memegang peran Project Manager untuk proyek komunikasi digital.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white border border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+            <div class="flex justify-between items-center mb-3">
+              <span class="px-2.5 py-1 bg-blue-50 text-brand-600 text-xs font-semibold rounded-md">Internship</span>
+              <span class="text-xs text-gray-400">Feb 2025 - Jul 2025</span>
+            </div>
+            <h3 class="font-bold text-gray-900 text-lg">Web Developer • Magang MBKM</h3>
+            <p class="text-xs text-brand-600 font-medium mb-3">FTIK - Universitas Semarang</p>
+            <p class="text-xs text-gray-500 leading-relaxed">
+              Mengembangkan sistem informasi inventaris dan pengajuan barang berbasis framework Laravel menggunakan metode SDLC serta mengintegrasikan RESTful API.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white border border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+            <div class="flex justify-between items-center mb-3">
+              <span class="px-2.5 py-1 bg-blue-50 text-brand-600 text-xs font-semibold rounded-md">Akademik</span>
+              <span class="text-xs text-gray-400">Sep 2024 - Jun 2025</span>
+            </div>
+            <h3 class="font-bold text-gray-900 text-lg">Asisten Dosen</h3>
+            <p class="text-xs text-brand-600 font-medium mb-3">FTIK - Universitas Semarang</p>
+            <p class="text-xs text-gray-500 leading-relaxed">
+              Mendukung kegiatan pembelajaran akademik melalui penyampaian materi, pengolahan data digital, dan pendampingan praktikum mahasiswa.
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="bg-white border border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+            <div class="flex justify-between items-center mb-3">
+              <span class="px-2.5 py-1 bg-blue-50 text-brand-600 text-xs font-semibold rounded-md">Freelance</span>
+              <span class="text-xs text-gray-400">2023 - Sekarang</span>
+            </div>
+            <h3 class="font-bold text-gray-900 text-lg">Content Creator & Event Volunteer</h3>
+            <p class="text-xs text-brand-600 font-medium mb-3">Freelance Semarang</p>
+            <p class="text-xs text-gray-500 leading-relaxed">
+              Mengoperasikan kamera, scripting, dan editing video dasar untuk kebutuhan event serta mendukung koordinasi operasional acara.
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="bg-white border border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+            <div class="flex justify-between items-center mb-3">
+              <span class="px-2.5 py-1 bg-blue-50 text-brand-600 text-xs font-semibold rounded-md">Organisasi</span>
+              <span class="text-xs text-gray-400">Pengalaman Komunitas</span>
+            </div>
+            <h3 class="font-bold text-gray-900 text-lg">Sekretaris Developer Community</h3>
+            <p class="text-xs text-brand-600 font-medium mb-3">Developer Community</p>
+            <p class="text-xs text-gray-500 leading-relaxed">
+              Mengelola administrasi acara, penjadwalan, penyusunan laporan, dan pengarsipan dokumen penting komunitas.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PORTOFOLIO SECTION (HALAMAN UTAMA) -->
+    <section id="portofolio" class="py-16 md:py-20 scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="mb-8">
+          <span class="text-xs font-bold text-brand-600 uppercase tracking-wider">KARYA & KONTRIBUSI</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-1">PORTOFOLIO SAYA</h2>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex items-center gap-3 mb-10 overflow-x-auto pb-2">
+          <button class="filter-btn active px-4 py-2 rounded-xl text-xs font-semibold bg-brand-600 text-white shadow-sm transition" data-filter="all">
+            <i class="fa-solid fa-border-all mr-1"></i> Semua
+          </button>
+          <button class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-gray-100 text-gray-600 hover:bg-gray-200 transition" data-filter="web">
+            Web Development
+          </button>
+          <button class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-gray-100 text-gray-600 hover:bg-gray-200 transition" data-filter="creative">
+            Digital Creative
+          </button>
+        </div>
+
+        <!-- Portfolio Items Grid (3 Card Utama di Halaman Depan) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- ITEM 1: Web Development -->
+          <a href="https://drive.google.com/drive/folders/1r_Gp-RzpPuLFnc-iK9RTnZB8B0QE4DIl?usp=sharing" target="_blank" class="portfolio-item web group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block cursor-pointer">
+            <div class="h-52 bg-blue-50/60 p-6 flex items-center justify-center relative overflow-hidden group-hover:bg-blue-100/60 transition">
+              <div class="w-full bg-white rounded-lg shadow-sm border border-blue-100 p-4 space-y-2">
+                <div class="text-[10px] font-bold text-blue-600 uppercase">INVENTARIS FTIK</div>
+                <div class="text-xs font-semibold text-gray-800 border-b pb-1">Ringkasan Inventaris</div>
+                <div class="grid grid-cols-3 gap-1 text-[9px] text-gray-500 text-center pt-1">
+                  <div class="bg-blue-50 p-1 rounded">Barang</div>
+                  <div class="bg-gray-50 p-1 rounded">Pengajuan</div>
+                  <div class="bg-gray-50 p-1 rounded">Kategori</div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <span class="text-[11px] font-medium text-brand-600">Laravel • Sistem Informasi</span>
+              <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Sistem Inventaris & Pengajuan Barang</h3>
+              <p class="text-xs text-gray-500 mt-2 leading-relaxed">
+                Sistem pengelolaan inventaris dan pengajuan barang untuk mendukung operasional FTIK Universitas Semarang.
+              </p>
+              <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">
+                Lihat detail <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+              </span>
+            </div>
+          </a>
+
+          <!-- ITEM 2: Social Media & Content Planning -->
+          <div class="portfolio-item creative group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-lg transition">
+            <div class="h-52 bg-emerald-50/60 p-6 flex items-center justify-center relative overflow-hidden">
+              <div class="w-44 bg-white rounded-xl shadow-sm border border-emerald-100 p-4 text-center space-y-2">
+                <div class="text-[10px] font-bold text-emerald-600 uppercase">CONTENT STUDIO</div>
+                <div class="grid grid-cols-3 gap-2 text-emerald-500 py-2">
+                  <i class="fa-solid fa-camera"></i>
+                  <i class="fa-solid fa-bullhorn"></i>
+                  <i class="fa-solid fa-calendar"></i>
+                  <i class="fa-solid fa-comments"></i>
+                  <i class="fa-solid fa-play"></i>
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <span class="text-[11px] font-medium text-brand-600">Social Media • Kinarya Project</span>
+              <h3 class="font-bold text-gray-900 text-base mt-1">Social Media & Content Planning</h3>
+              <p class="text-xs text-gray-500 mt-2 leading-relaxed">
+                Perencanaan konten, penjadwalan publikasi, dan pengelolaan interaksi audiens untuk kebutuhan komunikasi brand.
+              </p>
+              <a href="#" class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 hover:text-brand-700 mt-4">
+                Lihat detail <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ITEM 3: Video & Dokumentasi Kegiatan (KLIK DISINI MASUK KE HALAMAN 36 CARD) -->
+          <div onclick="showSubPage()" class="portfolio-item creative group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block cursor-pointer">
+            <div class="h-52 bg-amber-50/60 p-6 flex items-center justify-center relative overflow-hidden group-hover:bg-amber-100/60 transition">
+              <div class="w-52 h-32 bg-gray-900 rounded-xl shadow-sm p-3 flex flex-col justify-center items-center text-white relative">
+                <i class="fa-solid fa-circle-play text-3xl text-amber-400"></i>
+                <div class="absolute bottom-2 left-3 right-3 flex justify-between text-[8px] text-gray-400">
+                  <span>02:15</span>
+                  <span>HD 1080p</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-6">
+              <span class="text-[11px] font-medium text-brand-600">Content Creation • Freelance</span>
+              <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+              <p class="text-xs text-gray-500 mt-2 leading-relaxed">
+                Dokumentasi visual dan produksi konten video untuk mengabadikan momen serta menyampaikan cerita. (Klik untuk melihat daftar lengkap karya)
+              </p>
+              <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">
+                Buka Koleksi (36 Karya) <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- KONTAK SECTION -->
+    <section id="kontak" class="py-16 bg-blue-50/50 border-t border-blue-100 scroll-mt-20">
+      <div class="max-w-4xl mx-auto px-6 text-center space-y-6">
+        
+        <a href="mailto:putrisintaanggraeni253@gmail.com" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-medium px-6 py-3 rounded-xl transition shadow-md shadow-brand-500/20">
+          Sapa lewat email <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+        </a>
+
+        <div class="space-y-2 pt-2 text-xs md:text-sm text-gray-600">
+          <p class="flex items-center justify-center gap-2">
+            <i class="fa-regular fa-envelope"></i> putrisintaanggraeni253@gmail.com
+          </p>
+          <p class="flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp"></i> 
+            <a href="https://wa.me/6285600556628" target="_blank" class="hover:text-brand-600 transition">0856 0055 6628 ↗</a>
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+
+  <!-- WRAPPER HALAMAN KEDUA (DAFTAR 36 CARD INSTAGRAM - DIBALIK URUTANNYA DARI BAWAH KE ATAS) -->
+  <div id="sub-page-content" class="hidden py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <!-- Tombol Kembali -->
+      <div class="mb-8 flex items-center justify-between">
+        <div>
+          <button onclick="showMainPage()" class="inline-flex items-center gap-2 text-xs font-semibold bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2.5 rounded-xl transition">
+            <i class="fa-solid fa-arrow-left"></i> Kembali ke Portofolio Utama
+          </button>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mt-4">Koleksi Video & Dokumentasi Kegiatan</h2>
+          <p class="text-xs text-gray-500 mt-1">Daftar 36 konten Instagram Reels & Post.</p>
+        </div>
+      </div>
+
+      <!-- Grid 36 Card Instagram (Urutan Dibalik: Link Paling Bawah Menjadi Card 1) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- CARD 1 (Dari Link Paling Bawah: https://www.instagram.com/reel/DfPmYv-Jagq/...) -->
+        <a href="https://www.instagram.com/reel/DfPmYv-Jagq/?mdxt=amMzZ21uOGJ0amg4" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #1</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 2 -->
+        <a href="https://www.instagram.com/reel/DfE57-ys2TR/?srtk=MWphNHRzN3I3aGRxcw==" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #2</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 3 -->
+        <a href="https://www.instagram.com/reel/DfCVR8DOUsx/?srtk=MTF4bWgzNGo2Z2pveg==" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #3</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 4 -->
+        <a href="https://www.instagram.com/reel/Dey_b1pp1mI/?psln=dTljdnFuY3EzMXN5" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #4</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 5 -->
+        <a href="https://www.instagram.com/reel/Dey0x-lJARc/?exln=MWg0bDQ3M3V1bjQ0eQ==" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #5</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 6 -->
+        <a href="https://www.instagram.com/p/Deyl1ycIEP7/?exln=MWtzcGpoYTk4OWRnZA==" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Post #6</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Lihat di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 7 -->
+        <a href="https://www.instagram.com/reel/DeT-fBrpsqN/?psln=NTYzcmVwb29kemk4" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #7</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 8 -->
+        <a href="https://www.instagram.com/reel/DeOfQJ9KrVf/?exln=cmFqenIwemJyaWcx" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #8</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 9 -->
+        <a href="https://www.instagram.com/p/DeBWEBtieT8/?dlrf=MXU1N3huZmo0ejlnbw==" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Post #9</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Lihat di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 10 -->
+        <a href="https://www.instagram.com/reel/Dd8KqZ1J7Z6/?cplk=Y2M4ZXR1Y3cyMWdh" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #10</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 11 -->
+        <a href="https://www.instagram.com/reel/Dd3Sg4lpW0a/?exln=MXZnYXU1aXh5aWJlNw==" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #11</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 12 -->
+        <a href="https://www.instagram.com/reel/Dbxp2_VJEIX/?psln=MnA1dnZlMG96NWZr" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #12</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 13 -->
+        <a href="https://www.instagram.com/reel/DbVksANJu9v/?dlrf=bXhrMmVuemk1aGlh" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #13</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 14 -->
+        <a href="https://www.instagram.com/reel/DbShFkZJ2rc/?vrfl=amhpdWNwMGxua2Nj" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #14</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 15 -->
+        <a href="https://www.instagram.com/reel/DbNuIOYpDJu/?dlrf=YTNqOThkeDU2NHJ4" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #15</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 16 -->
+        <a href="https://www.instagram.com/reel/Da7m7IaJ5Kq/?xtok=aWg1aXl1ZmdsNjNt" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #16</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 17 -->
+        <a href="https://www.instagram.com/reel/DaxOG9CpVUh/?mdxt=MWU0dHVpY3Q2b2UyeA==" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #17</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 18 -->
+        <a href="https://www.instagram.com/reel/Dau0wd3pQPD/?mdxt=MTEzb2hxajZzZTFnNw==" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #18</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 19 -->
+        <a href="https://www.instagram.com/reel/DasQ3tlpM5L/?srtk=MXY0YnEzOXdxaXBkMA==" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #19</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 20 -->
+        <a href="https://www.instagram.com/reel/DapsLHUOkd6/?xtok=MWJmemlheGt3MWVvcA==" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #20</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 21 -->
+        <a href="https://www.instagram.com/reel/DaaTsoHJ9PW/?mdxt=MXVmaWkycmJlcXUzcg==" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #21</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 22 -->
+        <a href="https://www.instagram.com/reel/DaP6e-ZBaXu/?rpxt=bHhyNTY1amNuZWxo" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #22</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 23 -->
+        <a href="https://www.instagram.com/reel/DaH8qVdB5h2/?vrfl=M3VkZzkxbjlleGZ0" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #23</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 24 -->
+        <a href="https://www.instagram.com/p/DaAemXWG9Qk/?obrf=cmdqOWRmZHJ0dW9n" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Post #24</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Lihat di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 25 -->
+        <a href="https://www.instagram.com/reel/DZ4vN6BumE3/?exln=MTl0bDV2M2s0bmdieg==" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #25</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 26 -->
+        <a href="https://www.instagram.com/p/DZ4YSX2G6Cb/?dlrf=cjR0aTl0aHR0MGph" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Post #26</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Lihat di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 27 -->
+        <a href="https://www.instagram.com/reel/DZuLqxQs3gs/?obrf=dDhhZnRqcTF3bmlk" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #27</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 28 -->
+        <a href="https://www.instagram.com/reel/DUne0L-Caxv/?obrf=MW5vNGs1bmY4ZGFlZA==" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #28</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 29 -->
+        <a href="https://www.instagram.com/reel/DGnWhmAJPWZ/?obrf=MWJxZjJ6cHJidHY4MA==" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #29</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 30 -->
+        <a href="https://www.instagram.com/reel/DLrgDQqxoEx/?vrfl=dTJ2d2pkZzJteW42" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #30</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 31 -->
+        <a href="https://www.instagram.com/reel/DMh2Qr_xIrf/?rpxt=MTE4NXFxYnRjb2xzaQ==" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #31</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 32 -->
+        <a href="https://www.instagram.com/reel/DOpnui4ElDM/?cplk=cmQyYXptcTJ2eXFh" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #32</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 33 -->
+        <a href="https://www.instagram.com/reel/DPnOSmdCd-o/?cplk=dmxqMDBza2M2ZjVq" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #33</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 34 -->
+        <a href="https://www.instagram.com/reel/DQJSfDskQmj/?srtk=OWkxbnBhYWh4dmNi" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #34</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 35 -->
+        <a href="https://www.instagram.com/reel/DQ39qP7CUjE/?psln=ZjBkOTlzZmFtM3hz" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #35</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+        <!-- CARD 36 (Dari Link Paling Atas di daftar kamu: https://www.instagram.com/reel/DREynMPCaDX/...) -->
+        <a href="https://www.instagram.com/reel/DREynMPCaDX/?obrf=MXhvZnFwOXl6anEzaQ==" target="_blank" class="group border border-gray-100 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition block">
+          <div class="h-52 bg-gradient-to-tr from-purple-600 via-pink-500 to-amber-400 p-6 flex items-center justify-center relative overflow-hidden">
+            <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white text-2xl group-hover:scale-110 transition">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <div class="p-6">
+            <span class="text-[11px] font-medium text-brand-600">Instagram Reel #36</span>
+            <h3 class="font-bold text-gray-900 text-base mt-1 group-hover:text-brand-600 transition">Video & Dokumentasi Kegiatan</h3>
+            <p class="text-xs text-gray-500 mt-2 leading-relaxed">Koleksi karya konten video kreatif & dokumentasi visual Instagram.</p>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 group-hover:underline mt-4">Tonton di Instagram ↗</span>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-400 py-8 text-xs border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="font-bold text-white text-sm">
+        Putri Sinta Anggraeni.
+      </div>
+      <div>
+        © 2026 Putri Sinta Anggraeni.
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT UNTUK SPA NAVIGATION & INTERACTIVITY -->
+  <script>
+    // Fungsi untuk menampilkan halaman sub-koleksi card Instagram
+    function showSubPage() {
+      document.getElementById('main-content').classList.add('hidden');
+      document.getElementById('sub-page-content').classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Fungsi untuk kembali ke halaman utama portofolio
+    function showMainPage() {
+      document.getElementById('sub-page-content').classList.add('hidden');
+      document.getElementById('main-content').classList.remove('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // 1. Mobile Menu Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // 2. Portfolio Filter Logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-brand-600', 'text-white', 'shadow-sm');
+          b.classList.add('bg-gray-100', 'text-gray-600');
+        });
+
+        btn.classList.remove('bg-gray-100', 'text-gray-600');
+        btn.classList.add('bg-brand-600', 'text-white', 'shadow-sm');
+
+        const filterValue = btn.getAttribute('data-filter');
+
+        portfolioItems.forEach(item => {
+          if (filterValue === 'all' || item.classList.contains(filterValue)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 3. Dynamic Active Navbar Item on Scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    function setActiveNav(sectionId) {
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-section') === sectionId) {
+          link.classList.add('border-b-2', 'border-brand-600', 'text-brand-600', 'font-semibold');
+          link.classList.remove('text-gray-600');
+        } else {
+          link.classList.remove('border-b-2', 'border-brand-600', 'text-brand-600', 'font-semibold');
+          link.classList.add('text-gray-600');
+        }
+      });
+
+      mobileNavLinks.forEach(link => {
+        if (link.getAttribute('data-section') === sectionId) {
+          link.classList.add('text-brand-600', 'font-semibold');
+          link.classList.remove('text-gray-600');
+        } else {
+          link.classList.remove('text-brand-600', 'font-semibold');
+          link.classList.add('text-gray-600');
+        }
+      });
+    }
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -60% 0px',
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveNav(entry.target.id);
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
